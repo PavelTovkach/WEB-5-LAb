@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Concepts</title>
+    <style>
+        img {
+            float: right;
+            max-width: 400px;
+            margin: 10px;
+        }
+		  .toc {
+            text-align: center;
+        }
+        .toc a {
+            margin: 0 10px;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+			}
+    </style>
+</head>
+
+<body>
+<header>
+        <div class="toc">
+            <a href="#box-model">Box Model</a>
+            <a href="#clearfix-hack">Clearfix Hack</a>
+            <a href="#margin-collapse">Margin Collapse</a>
+            <a href="#holy-grail-layout">Holy Grail Layout</a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Understanding CSS Concepts</h1>
+
+            <h2>Box Model in CSS</h2>
+            <p>The CSS box model is a design concept that describes how elements on a webpage are rendered by the browser. It consists of content area, padding, border, and margin. The <strong>box-sizing</strong> property is used to alter the default CSS box model. The <strong>box-sizing: border-box</strong> value includes padding and borders in the element's total width and height.</p>
+            <img src="box-model.png" alt="CSS Box Model">
+
+            <h2>CSS Clearfix Hack</h2>
+            <p>A "clearfix hack" is a technique used to clear floats when elements inside a container do not automatically push the height of the container. It is required when floating elements inside a container cause the parent element to collapse. Applying a clearfix hack ensures that the parent container expands to contain its floated children.</p>
+            <img src="ClearfixHack.png" alt="CSSClearfixHack">
+
+            <h2>Margin Collapse and Margin Values</h2>
+            <p>Margin collapse occurs when the top and bottom margins of two elements are touching. In such cases, the margins do not add up, but the larger of the two margins applies. The <strong>margin: auto</strong> property is used to horizontally center an element by automatically adjusting the margins. Negative margin values can be used to move an element in the opposite direction.</p>
+            <img src="margin-collapse.jpg" alt="MarginCollapse">
+            <img src="margin-values.png" alt="MarginValues">
+
+            <h2>Holy Grail Layout Problem</h2>
+            <p>The Holy Grail layout refers to a web design setup with a header, footer, and three columns, where the center column is the longest. Achieving this layout was challenging due to constraints like equal height columns and flexible width.</p>
+
+            <h2>Modern Ways to Achieve Holy Grail Layout</h2>
+            <p>Modern ways to achieve the Holy Grail layout include using flexbox and CSS grid. Flexbox allows for easy alignment and distribution of space among elements, making it simpler to create complex layouts. CSS grid provides a two-dimensional layout system, enabling the easy creation of grid structures for webpage designs.</p>
+
+        </article>
+    </main>
+	 <footer>
+        <p>Student: Tovkach Pavel</p>
+        <p>Course: IRM 354</p>
+        <p>Date: 21.04.2024</p>
+        <p>Day: Sunday</p>
+        <p>Place: Notepad++</p>
+        
+        <h3>Interesting Links:</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla Reference</a></li>
+            <li><a href="https://www.w3schools.com/css/">W3Schools</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
